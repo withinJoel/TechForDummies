@@ -1,0 +1,57 @@
+* Create an App using Electron 
+
+1. Install Node.js
+2. create a folder called as "App" or name whatever you want
+3. open cmd
+4. now go to the folder of you project like "cd.." and so on to the project directory and then to you created folder in this case "App"
+cd your-project/App/
+5. enter this command "npm init -y"
+6. then this command "npm install electron --save-dev"
+7. then create a main.js inside the "App" folder
+8. And add these lines of code to that main.js file
+
+const { app, BrowserWindow, screen, Menu } = require('electron');
+const path = require('path');
+
+function createWindow() {
+  const { width, height } = screen.getPrimaryDisplay().workAreaSize;
+
+  const emptyMenu = Menu.buildFromTemplate([]);
+
+  const win = new BrowserWindow({
+    width: 1800,
+    height: 780,
+    frame: true,
+    autoHideMenuBar: true,
+    resizable: false,
+    maximizable: false,
+    icon: path.join(app.getAppPath(), 'Evelina.ico'), // Use app.getAppPath() to get the resources directory
+    webPreferences: {
+      nodeIntegration: false
+    }
+  });
+  
+
+  win.loadURL('https://evelina-ai.pages.dev/');
+
+  // Set window margins and padding to 0
+  win.webContents.on('did-finish-load', () => {
+    win.webContents.insertCSS(`
+      html, body, #app {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        height: 100%;
+        overflow: hidden;
+      }
+    `);
+  });
+
+  // Listen for maximize event to adjust the window size
+  win.on('maximize', () => {
+    const { width, height } = screen.getPrimaryDisplay().workAreaSize;
+    win.setSize(width, height);
+  });
+}
+
+app.whenReady().then(createWindow);
