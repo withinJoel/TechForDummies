@@ -8,7 +8,7 @@ cd your-project/App/
 5. enter this command "npm init -y"
 6. then this command "npm install electron --save-dev"
 7. then create a main.js inside the "App" folder
-8. And add these lines of code to that main.js file
+8. And add these lines of code to that index.js file
 
 const { app, BrowserWindow, screen, Menu } = require('electron');
 const path = require('path');
@@ -55,3 +55,50 @@ function createWindow() {
 }
 
 app.whenReady().then(createWindow);
+
+9. And clear the existing package.json and add this code 
+{
+  "name": "Win booster",
+  "version": "1.0.0",
+  "description": "A windows exclusive package",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "package": "electron-packager . --platform=win32 --arch=x64 --out=dist --overwrite"
+  },
+  "keywords": [],
+  "author": "Microsoft",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^16.0.0"
+  }
+}
+
+
+10. Once all the testing is over, It's now time to extract the app
+11. enter this command in the cmd in the same location where the index.js is present.
+npm install -g electron-packager electron-builder
+
+12. Then type "npm run package in the cmd".
+
+13. to craete a package install inno setup from this site.
+14. And create a run.iss file outside the folder that you want to compress and make a setup 
+ [Setup]
+AppName=fucking
+AppVersion=1.0
+DefaultDirName={pf}\Win booster-win32-x64
+DefaultGroupName=Win booster-win32-x64
+OutputDir=Output
+OutputBaseFilename=Setup
+Compression=lzma2
+SolidCompression=yes
+
+[Files]
+Source: "Win booster-win32-x64\*"; DestDir: "{app}"; Flags: recursesubdirs
+
+[Icons]
+Name: "{commondesktop}\YourAppName"; Filename: "{app}\YourApp.exe"; IconFilename: "{app}\YourApp.exe"
+Name: "{group}\YourAppName"; Filename: "{app}\YourApp.exe"; IconFilename: "{app}\YourApp.exe"
+
+open the code using iss and compile and run 
+done!
