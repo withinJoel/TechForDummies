@@ -4,4 +4,6 @@
 2. Go to the folder that you want to create the app and type this command in your cmd terminal 
 3. `npm create vite@latest` (Answer all the required questions based on your requirement)
 4. then go inside the folder of your project and type `npm install`
-5. ten type code . (or) Just drag the folder of the project into visual studio code.
+5. then type code . (or) Just drag the folder of the project into visual studio code.
+6. Then go to visual studio code and then to terminal (next to run) from the top menu and then to new terminal and then type this command
+7. `npm run dev` to run the application.
