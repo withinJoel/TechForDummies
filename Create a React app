@@ -7,3 +7,10 @@
 5. then type code . (or) Just drag the folder of the project into visual studio code.
 6. Then go to visual studio code and then to terminal (next to run) from the top menu and then to new terminal and then type this command
 7. `npm run dev` to run the application.
+
+Just For Your Information
+* `node_modules` - Where all your modules are downloaded and kept, DO NOT CHANGE ANYTHING!
+* `public` - Where all your images, videos, audios and other assests are stored for your website.
+* `src` - Where you will add pages and their codes (The coding part).
+
+8. 
