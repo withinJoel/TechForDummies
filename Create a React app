@@ -1,0 +1,7 @@
+# Create a React app
+
+1. Open cmd
+2. Go to the folder that you want to create the app and type this command in your cmd terminal 
+3. `npm create vite@latest` (Answer all the required questions based on your requirement)
+4. then go inside the folder of your project and type `npm install`
+5. ten type code . (or) Just drag the folder of the project into visual studio code.
