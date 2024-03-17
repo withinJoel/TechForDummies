@@ -13,4 +13,8 @@ Just For Your Information
 * `public` - Where all your images, videos, audios and other assests are stored for your website.
 * `src` - Where you will add pages and their codes (The coding part).
 
+Extensions
+* `.ts` - For normal Typescript file.
+* `.tsx` - For Typescript + React file.
+
 8. 
