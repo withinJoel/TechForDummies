@@ -7,7 +7,7 @@
 cd your-project/App/
 5. enter this command "npm init -y"
 6. then this command "npm install electron --save-dev"
-7. then create a main.js inside the "App" folder
+7. then create a index.js inside the "App" folder
 8. And add these lines of code to that index.js file
 
 const { app, BrowserWindow, screen, Menu } = require('electron');
@@ -32,7 +32,7 @@ function createWindow() {
   });
   
 
-  win.loadURL('https://evelina-ai.pages.dev/');
+  win.loadURL('https://evelina.pages.dev/');
 
   // Set window margins and padding to 0
   win.webContents.on('did-finish-load', () => {
@@ -81,10 +81,10 @@ npm install -g electron-packager electron-builder
 
 12. Then type "npm run package in the cmd".
 
-13. to craete a package install inno setup from this site.
+13. to create a package install inno setup from this site.
 14. And create a run.iss file outside the folder that you want to compress and make a setup 
  [Setup]
-AppName=fucking
+AppName=hola
 AppVersion=1.0
 DefaultDirName={pf}\Win booster-win32-x64
 DefaultGroupName=Win booster-win32-x64
