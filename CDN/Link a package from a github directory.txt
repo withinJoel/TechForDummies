@@ -1,0 +1,8 @@
+Explanation:      "Site URL                "/gh/username/repo-name/folder path/file name"
+Code: <script src="https://cdn.jsdelivr.net/gh/withinJoel/mindboost/Mindboost/Mindboost-1.2.3.js"></script>
+
+In detail
+
+* GH stands for Github.
+* username is the Github username of the repo that you are targeting.
+* file name is Mindboost-1.2.3.js (Note: There should be the version number else it will not work.)(The version number should be in this format only. `-1.2.3`)
