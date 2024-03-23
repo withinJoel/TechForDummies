@@ -7,8 +7,8 @@
 cd your-project/App/
 5. enter this command "npm init -y"
 6. then this command "npm install electron --save-dev"
-7. then create a index.js inside the "App" folder
-8. And add these lines of code to that index.js file
+7. then create a main.js inside the "App" folder
+8. And add these lines of code to that main.js file
 
 const { app, BrowserWindow, screen, Menu } = require('electron');
 const path = require('path');
@@ -56,27 +56,8 @@ function createWindow() {
 
 app.whenReady().then(createWindow);
 
-9. And clear the existing package.json and add this code 
-{
-  "name": "Evelina",
-  "version": "2.3.2",
-  "description": "An AI chatbot from the future.",
-  "main": "index.js",
-  "scripts": {
-    "start": "electron .",
-    "package": "electron-packager . --platform=win32 --arch=x64 --out=dist --overwrite"
-  },
-  "keywords": [],
-  "author": "Joel Jolly",
-  "license": "ISC",
-  "devDependencies": {
-    "electron": "^16.0.0"
-  },
-  "icon": "Evelina.ico"
-}
-
 10. Once all the testing is over, It's now time to extract the app
-11. enter this command in the cmd in the same location where the index.js is present.
+11. enter this command in the cmd in the same location where the main.js is present.
 npm install -g electron-packager electron-builder
 
 12. Then type "npm run package in the cmd".
