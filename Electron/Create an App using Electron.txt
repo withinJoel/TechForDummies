@@ -58,16 +58,16 @@ app.whenReady().then(createWindow);
 
 9. And clear the existing package.json and add this code 
 {
-  "name": "Win booster",
+  "name": "Evelina",
   "version": "1.0.0",
-  "description": "A windows exclusive package",
+  "description": "Chatbot",
   "main": "index.js",
   "scripts": {
     "start": "electron .",
     "package": "electron-packager . --platform=win32 --arch=x64 --out=dist --overwrite"
   },
   "keywords": [],
-  "author": "Microsoft",
+  "author": "Joel Jolly",
   "license": "ISC",
   "devDependencies": {
     "electron": "^16.0.0"
@@ -83,22 +83,22 @@ npm install -g electron-packager electron-builder
 
 13. to create a package install inno setup from this site.
 14. And create a run.iss file outside the folder that you want to compress and make a setup 
- [Setup]
-AppName=hola
-AppVersion=1.0
-DefaultDirName={pf}\Win booster-win32-x64
-DefaultGroupName=Win booster-win32-x64
+[Setup]
+AppName=Evelina
+AppVersion=2.3.8
+DefaultDirName={pf}\Evelina
+DefaultGroupName=Evelina
 OutputDir=Output
 OutputBaseFilename=Setup
 Compression=lzma2
 SolidCompression=yes
 
 [Files]
-Source: "Win booster-win32-x64\*"; DestDir: "{app}"; Flags: recursesubdirs
+Source: "Evelina\*"; DestDir: "{app}"; Flags: recursesubdirs
 
 [Icons]
-Name: "{commondesktop}\YourAppName"; Filename: "{app}\YourApp.exe"; IconFilename: "{app}\YourApp.exe"
-Name: "{group}\YourAppName"; Filename: "{app}\YourApp.exe"; IconFilename: "{app}\YourApp.exe"
+Name: "{commondesktop}\Evelina"; Filename: "{app}\Evelina.exe"; IconFilename: "{app}\Evelina.exe"
+Name: "{group}\Evelina"; Filename: "{app}\Evelina.exe"; IconFilename: "{app}\Evelina.exe"
 
 open the code using iss and compile and run 
 done!
