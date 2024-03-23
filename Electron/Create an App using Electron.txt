@@ -59,8 +59,8 @@ app.whenReady().then(createWindow);
 9. And clear the existing package.json and add this code 
 {
   "name": "Evelina",
-  "version": "1.0.0",
-  "description": "Chatbot",
+  "version": "2.3.2",
+  "description": "An AI chatbot from the future.",
   "main": "index.js",
   "scripts": {
     "start": "electron .",
@@ -71,9 +71,9 @@ app.whenReady().then(createWindow);
   "license": "ISC",
   "devDependencies": {
     "electron": "^16.0.0"
-  }
+  },
+  "icon": "Evelina.ico"
 }
-
 
 10. Once all the testing is over, It's now time to extract the app
 11. enter this command in the cmd in the same location where the index.js is present.
