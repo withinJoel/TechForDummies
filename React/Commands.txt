@@ -1,0 +1,70 @@
+React Commands
+
+1. **npm start:**
+   - This command is used to start a development server for your React application.
+   - It typically runs the script specified in the `"start"` field of your `package.json` file.
+   - For example, if your `package.json` file has `"start": "react-scripts start"`, then running `npm start` will start the development server using React Scripts.
+
+2. **npm run build:**
+   - This command is used to build your React application for production deployment.
+   - It typically runs the script specified in the `"build"` field of your `package.json` file.
+   - For example, if your `package.json` file has `"build": "react-scripts build"`, then running `npm run build` will build your application into optimized static files (HTML, CSS, JavaScript) for production.
+
+3. **npm start package:**
+   - This command is not a standard React command, and its behavior depends on what script you have defined in your `package.json` file.
+   - If you have a script named `"package"` in your `package.json`, running `npm start package` will execute that script.
+   - For example, if you have `"package": "node scripts/package.js"` in your `package.json`, then `npm start package` will run the `scripts/package.js` file using Node.js.
+
+4. **npm run dev:**
+   - This command is not a standard React command, and its behavior depends on what script you have defined in your `package.json` file.
+   - If you have a script named `"dev"` in your `package.json`, running `npm run dev` will execute that script.
+   - For example, if you have `"dev": "nodemon server.js"` in your `package.json`, then `npm run dev` will start your server using Nodemon, which automatically restarts the server when files change during development.
+
+6. **npm install:**
+   - This command is used to install dependencies for your React project based on the dependencies listed in your `package.json` file.
+   - Running `npm install` will download and install all required packages specified in the `"dependencies"` and `"devDependencies"` sections of your `package.json`.
+
+7. **npm run test:**
+   - This command is used to run tests for your React application using a test runner like Jest.
+   - It typically runs the script specified in the `"test"` field of your `package.json` file.
+   - For example, if your `package.json` file has `"test": "react-scripts test"` and you have test files in your project, running `npm run test` will execute your tests.
+
+8. **npm run eject:**
+   - This command is used to eject your React application from the default configuration provided by Create React App.
+   - Ejecting allows you to customize build configurations, webpack settings, and other aspects of your React project that are not accessible in the default setup.
+   - However, ejecting is a one-way operation, and it's recommended to proceed with caution as it cannot be reversed.
+
+4. **npm run lint:**
+   - This command is used to run a linting tool such as ESLint on your React codebase.
+   - It typically runs the script specified in the `"lint"` or `"lint:js"` field of your `package.json` file.
+   - For example, if your `package.json` file has `"lint": "eslint ."` or `"lint:js": "eslint src"` and you have ESLint configured in your project, running `npm run lint` will check your code for linting errors and warnings.
+
+9. **npm run start:dev:**
+   - This is a custom command that developers may define in their `package.json` file to start the development server with specific configurations or options.
+   - It's not a standard React command but can be used for development purposes based on project requirements.
+   - For example, if you have `"start:dev": "react-scripts start --env=dev"` in your `package.json`, running `npm run start:dev` will start the development server with the `dev` environment configuration.
+
+10. **npm run eject:**
+   - This command is used to eject your React application from the default configuration provided by Create React App.
+   - Ejecting allows you to customize build configurations, webpack settings, and other aspects of your React project that are not accessible in the default setup.
+   - However, ejecting is a one-way operation, and it's recommended to proceed with caution as it cannot be reversed.
+
+11. **npm run build:dev:**
+   - This is a custom command that developers may define in their `package.json` file to build the development version of their React application with specific configurations or options.
+   - It's not a standard React command but can be used for building development versions based on project requirements.
+   - For example, if you have `"build:dev": "react-scripts build --env=dev"` in your `package.json`, running `npm run build:dev` will build the development version of your application with the `dev` environment configuration.
+
+12. **npm run build:prod:**
+   - This is another custom command that developers may define to build the production version of their React application with specific configurations or options.
+   - It's not a standard React command but can be used for building production versions based on project requirements.
+   - For example, if you have `"build:prod": "react-scripts build --env=prod"` in your `package.json`, running `npm run build:prod` will build the production version of your application with the `prod` environment configuration.
+
+13. **npm run deploy:**
+   - This command is used to deploy your React application to a hosting platform or server.
+   - It typically runs a script that handles deployment tasks such as building the production version, copying files to a deployment directory, and deploying to a hosting service.
+   - Developers often define custom deployment scripts in their `package.json` file to automate deployment processes.
+
+14. **npm run format:**
+   - This command is used to format your React codebase using a code formatter like Prettier.
+   - It typically runs a script that formats files based on the configuration specified in your `.prettierrc` file or other formatting configurations.
+   - For example, if you have `"format": "prettier --write src"` in your `package.json`, running `npm run format` will format files in the `src` directory using Prettier.
