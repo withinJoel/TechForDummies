@@ -1,0 +1,17 @@
+* 1:08:57 PM  [mysql] 	Error: MySQL shutdown unexpectedly.
+* 1:08:57 PM  [mysql] 	This may be due to a blocked port, missing dependencies, 
+* 1:08:57 PM  [mysql] 	improper privileges, a crash, or a shutdown by another method.
+* 1:08:57 PM  [mysql] 	Press the Logs button to view error logs and check
+* 1:08:57 PM  [mysql] 	the Windows Event Viewer for more clues
+* 1:08:57 PM  [mysql] 	If you need more help, copy and post this
+* 1:08:57 PM  [mysql] 	entire log window on the forums
+* Solution
+* Goto Xampp/mysql
+* Rename data to old_data
+* Make a copy of the folder called "backup". which is present in the same directory and paste it in the same directory.
+* Now rename the copy of the original backup folder as "data"
+* Now go to "old_data" and copy only the project that you are working on for example "era_wanderer" folder..
+* And paste it in the "data" folder.
+* Now delete "ibdata1" file from the "data" folder and then copy the "ibdata1" file from the "old_data" and paste it in the "data" folder.
+* That's it, now run xampp.
+* If you still didnt get it then check out this video: https://www.youtube.com/watch?v=bUK3DkzgpPo
