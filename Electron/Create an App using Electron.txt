@@ -75,7 +75,7 @@ app.whenReady().then(createWindow);
 }
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-10. Once all the testing is over, It's now time to extract the app
+10. Once all the testing is over, It's now time to extract the app (`npm start` to test the program)
 11. enter this command in the cmd in the same location where the main.js is present.
 npm install -g electron-packager electron-builder
 
