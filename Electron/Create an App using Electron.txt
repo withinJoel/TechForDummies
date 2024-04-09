@@ -79,7 +79,7 @@ app.whenReady().then(createWindow);
 11. enter this command in the cmd in the same location where the main.js is present.
 npm install -g electron-packager electron-builder
 
-12. Then type "npm run package in the cmd".
+12. Then type "npm run package" in the cmd.
 
 13. to create a package install inno setup from this site.
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
