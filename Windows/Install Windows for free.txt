@@ -1,0 +1,6 @@
+Install Windows for free
+
+1. Run CMD with adminstrator rights.
+2. Enter `slmgr /ipk kmsclientkey`
+3. Then enter `slmgr /skms kms8.msguides.com`
+4. Then enter `slmgr /ato`
