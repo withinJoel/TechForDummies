@@ -1,5 +1,7 @@
 * Create an App using Electron 
 
+# Shorcuts
+ctrl shift i - for developer mode in the electron web app
 1. Install Node.js
 2. create a folder called as "App" or name whatever you want
 3. open cmd
