@@ -87,21 +87,29 @@ npm install -g electron-packager electron-builder
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 14. And create a run.iss file outside the folder that you want to compress and make a setup 
 [Setup]
-AppName=Evelina
-AppVersion=2.3.8
-DefaultDirName={pf}\Evelina
-DefaultGroupName=Evelina
+AppName=Elsa
+AppVersion=1.1.4
+AppPublisher=Joel Jolly
+AppPublisherURL=https://github.com/withinjoel/elsa
+AppSupportURL=https://github.com/withinjoel/elsa/issues
+AppUpdatesURL=https://github.com/withinjoel/elsa/releases
+DefaultDirName={pf}\Elsa
+DefaultGroupName=Elsa
 OutputDir=Output
 OutputBaseFilename=Setup
 Compression=lzma2
 SolidCompression=yes
+SetupIconFile=..\Core\Logo\Elsa.ico
 
 [Files]
-Source: "Evelina\*"; DestDir: "{app}"; Flags: recursesubdirs
+Source: "Elsa\*"; DestDir: "{app}"; Flags: recursesubdirs
 
 [Icons]
-Name: "{commondesktop}\Evelina"; Filename: "{app}\Evelina.exe"; IconFilename: "{app}\Evelina.exe"
-Name: "{group}\Evelina"; Filename: "{app}\Evelina.exe"; IconFilename: "{app}\Evelina.exe"
+Name: "{commondesktop}\Elsa"; Filename: "{app}\Elsa.exe"; IconFilename: "{app}\Elsa.exe"
+Name: "{group}\Elsa"; Filename: "{app}\Elsa.exe"; IconFilename: "{app}\Elsa.exe"
+
+[Run]
+Filename: "{app}\Elsa.exe"; Description: "{cm:LaunchProgram,Elsa}"; Flags: nowait postinstall skipifsilent
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 open the code using iss and compile and run 
