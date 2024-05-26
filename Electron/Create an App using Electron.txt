@@ -61,18 +61,18 @@ app.whenReady().then(createWindow);
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 9. Then remove all the contents from the package.json and add this code 
 {
-  "name": "Evelina",
-  "version": "2.3.2",
-  "description": "An AI chatbot from the future.",
+  "name": "Elsa",
+  "version": "1.1.6",
+  "description": "Elsa",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
-    "package": "electron-packager . Evelina --platform=win32 --arch=x64 --out=dist --overwrite --icon=Evelina.ico"
+    "package": "electron-packager . Elsa --platform=win32 --arch=x64 --out=dist --overwrite --icon=Elsa.ico"
   },
   "author": "Joel Jolly",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^16.0.0"
+    "electron": "^30.0.0"
   }
 }
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
