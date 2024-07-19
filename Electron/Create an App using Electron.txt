@@ -114,3 +114,16 @@ Filename: "{app}\Elsa.exe"; Description: "{cm:LaunchProgram,Elsa}"; Flags: nowai
 
 open the code using iss and compile and run 
 done!
+
+
+
+
+
+/////////////////////////////////////////////////////////////////Issues/////////////////////////////////////////////////////////////////////////////////////////////
+/////Icon not loading in the explorer
+* run cmd as admin
+* paste this code 
+ie4uinit.exe -ClearIconCache
+taskkill /IM explorer.exe /F
+DEL /A /Q "%localappdata%\IconCache.db"
+start explorer.exe
