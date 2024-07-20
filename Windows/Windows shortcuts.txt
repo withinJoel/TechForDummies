@@ -1,0 +1,7 @@
+ctrl + C - To copy
+ctrl + V - To paste
+ctrl + x - To move
+window key + . - To open the emoji menu
+ctrl z - To undo
+ctrl shift z - To redo
+ctrl click - to open a link
