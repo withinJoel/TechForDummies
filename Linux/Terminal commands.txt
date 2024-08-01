@@ -1,3 +1,4 @@
 ls - To list all the files in that directory.
 cd - To change the directory.
 to install apps for .gz extenstions
+    * Extract it
