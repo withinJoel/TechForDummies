@@ -1,7 +1,7 @@
 # Create an App using Electron 
 
 ## Shorcuts
-ctrl shift i - for developer mode in the electron web app
+`ctrl shift i` - for developer mode in the electron web app
 
 ## Get Started
 1. Install Node.js
@@ -12,8 +12,6 @@ cd your-project/App/
 5. enter this command "npm init -y"
 6. then this command "npm install electron --save-dev"
 7. then create a main.js inside the "App" folder
-
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 8. And add these lines of code to that main.js file
 ```
 const { app, BrowserWindow, screen, Menu } = require('electron');
@@ -62,7 +60,6 @@ function createWindow() {
 
 app.whenReady().then(createWindow);
 ```
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 9. Then remove all the contents from the package.json and add this code 
 ```
 {
@@ -81,16 +78,11 @@ app.whenReady().then(createWindow);
   }
 }
 ```
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
 10. Once all the testing is over, It's now time to extract the app (`npm start` to test the program)
 11. enter this command in the cmd in the same location where the main.js is present.
 npm install -g electron-packager electron-builder
-
 12. Then type "npm run package" in the cmd.
-
 13. to create a package install inno setup from this site.
-///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 14. And create a run.iss file outside the folder that you want to compress and make a setup.
 ```
 [Setup]
@@ -118,14 +110,8 @@ Name: "{group}\Elsa"; Filename: "{app}\Elsa.exe"; IconFilename: "{app}\Elsa.exe"
 [Run]
 Filename: "{app}\Elsa.exe"; Description: "{cm:LaunchProgram,Elsa}"; Flags: nowait postinstall skipifsilent
 ```
-////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-open the code using iss and compile and run 
-done!
-
-
-
-
+15. open the code using iss and compile and run 
+16. done!
 
 /////////////////////////////////////////////////////////////////Issues/////////////////////////////////////////////////////////////////////////////////////////////
 ## Icon not loading in the explorer
