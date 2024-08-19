@@ -1,27 +1,22 @@
-# Create an App using Electron 
-
-## Shorcuts
-`ctrl shift i` - for developer mode in the electron web app
-
+# Create an App using Electron
+## Shortcut
+* Press Ctrl + Shift + I to open developer mode in the Electron web app.
 ## Get Started
-1. Install Node.js
-2. create a folder called as "App" or name whatever you want
-3. open cmd
-4. now go to the folder of you project like `cd..` and so on to the project directory and then to you created folder in this case "App"
-cd your-project/App/
-5. enter this command `npm init -y`
-6. then this command `npm install electron --save-dev`
-7. then create a `main.js` inside the `App` folder
-8. And add these lines of code to that `main.js` file
+* Install Node.js: Download and install Node.js from https://nodejs.org/.
+* Create a Project Folder: Make a new folder for your app (e.g., "MyElectronApp").
+* Open Command Prompt: Open a command prompt and navigate to your project folder.
+* Initialize Project: Run npm init -y to create a package.json file.
+* Install Electron: Run npm install electron --save-dev to install Electron.
+* Create Main File: Create a file named main.js in your project folder.
+* Add Code to main.js:
 ```
 const { app, BrowserWindow, screen, Menu } = require('electron');
 const path = require('path');
 
 function createWindow() {
-  const { width, height } = screen.getPrimaryDisplay().workAreaSize;
+  const { width, height } = screen.getPrimaryDisplay().workAreaSize;   
 
   const emptyMenu = Menu.buildFromTemplate([]);
-
   const win = new BrowserWindow({
     width: 1800,
     height: 780,
@@ -29,16 +24,12 @@ function createWindow() {
     autoHideMenuBar: true,
     resizable: false,
     maximizable: false,
-    icon: path.join(app.getAppPath(), 'Evelina.ico'), // Use app.getAppPath() to get the resources directory
+    icon: path.join(app.getAppPath(), 'Evelina.ico'), // Replace with your icon path
     webPreferences: {
       nodeIntegration: false
     }
   });
-  
-
   win.loadURL('https://evelina.pages.dev/');
-
-  // Set window margins and padding to 0
   win.webContents.on('did-finish-load', () => {
     win.webContents.insertCSS(`
       html, body, #app {
@@ -50,17 +41,14 @@ function createWindow() {
       }
     `);
   });
-
-  // Listen for maximize event to adjust the window size
   win.on('maximize', () => {
     const { width, height } = screen.getPrimaryDisplay().workAreaSize;
     win.setSize(width, height);
   });
 }
-
 app.whenReady().then(createWindow);
 ```
-9. Then remove all the contents from the `package.json` and add this code 
+* Modify package.json: Replace the contents of package.json with:
 ```
 {
   "name": "Elsa",
@@ -78,12 +66,14 @@ app.whenReady().then(createWindow);
   }
 }
 ```
-10. Once all the testing is over, It's now time to extract the app (`npm start` to test the program)
-11. enter the above and the below command in the cmd in the same location where the `main.js` is present.
-`npm install -g electron-packager electron-builder`
-12. Then type `npm run package` in the cmd.
-13. to create a package install inno setup from this site.
-14. And create a `run.iss` file outside the folder that you want to compress and make a setup.
+
+* Test the App: Run npm start to test the app.
+* Install required packages: npm install -g electron-packager electron-builder
+* Run npm run package to create a package.
+## Additional (If you want to create a setup for Windows)
+* Create a Setup:
+* Install Inno Setup.
+* Create a run.iss file with the following content:
 ```
 [Setup]
 AppName=Elsa
@@ -99,24 +89,19 @@ OutputBaseFilename=Setup
 Compression=lzma2
 SolidCompression=yes
 SetupIconFile=..\Core\Logo\Elsa.ico
-
 [Files]
 Source: "Elsa\*"; DestDir: "{app}"; Flags: recursesubdirs
-
 [Icons]
 Name: "{commondesktop}\Elsa"; Filename: "{app}\Elsa.exe"; IconFilename: "{app}\Elsa.exe"
 Name: "{group}\Elsa"; Filename: "{app}\Elsa.exe"; IconFilename: "{app}\Elsa.exe"
-
 [Run]
 Filename: "{app}\Elsa.exe"; Description: "{cm:LaunchProgram,Elsa}"; Flags: nowait postinstall skipifsilent
 ```
-15. open the code using iss and compile and run 
-16. done!
-
+* Compile and run the Inno Setup script to create a setup file.
 # Issues
 ## Icon not loading in the explorer
-* run cmd as admin
-* paste this code 
+* Run command prompt as administrator.
+* Execute the following commands:
 ```
 ie4uinit.exe -ClearIconCache
 taskkill /IM explorer.exe /F
