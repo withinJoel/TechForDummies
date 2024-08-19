@@ -3,7 +3,8 @@
 
 ## To get the ip address
 * type `ip addr show`
-* The `inet` is your ip address.
+* The 1.lo: after `inet` is your local ip address.
+* The 2. enp2s0: after `inet` is your actual ip address.
 * output:
 ```
 user1@sysadmin-OptiPlex-3020:~$ ip addr show
