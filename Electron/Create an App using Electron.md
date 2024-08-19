@@ -1,14 +1,14 @@
 # Create an App using Electron
 ## Shortcut
-* Press Ctrl + Shift + I to open developer mode in the Electron web app.
+* Press `Ctrl + Shift + I` to open developer mode in the Electron web app.
 ## Get Started
-* Install Node.js: Download and install Node.js from https://nodejs.org/.
+* Install Node.js: Download and install Node.js from `https://nodejs.org/`.
 * Create a Project Folder: Make a new folder for your app (e.g., "MyElectronApp").
 * Open Command Prompt: Open a command prompt and navigate to your project folder.
-* Initialize Project: Run npm init -y to create a package.json file.
-* Install Electron: Run npm install electron --save-dev to install Electron.
-* Create Main File: Create a file named main.js in your project folder.
-* Add Code to main.js:
+* Initialize Project: `Run npm init -y` to create a package.json file.
+* Install Electron: Run `npm install electron --save-dev` to install Electron.
+* Create Main File: Create a file named `main.js` in your project folder.
+* Add Code to `main.js`:
 ```
 const { app, BrowserWindow, screen, Menu } = require('electron');
 const path = require('path');
@@ -48,7 +48,7 @@ function createWindow() {
 }
 app.whenReady().then(createWindow);
 ```
-* Modify package.json: Replace the contents of package.json with:
+* Modify `package.json`: Replace the contents of `package.json` with:
 ```
 {
   "name": "Elsa",
@@ -67,13 +67,12 @@ app.whenReady().then(createWindow);
 }
 ```
 
-* Test the App: Run npm start to test the app.
-* Install required packages: npm install -g electron-packager electron-builder
-* Run npm run package to create a package.
+* Test the App: Run `npm start` to test the app.
+* Install required packages: `npm install -g electron-packager electron-builder`
+* Run `npm run package` to create a package.
 ## Additional (If you want to create a setup for Windows)
-* Create a Setup:
 * Install Inno Setup.
-* Create a run.iss file with the following content:
+* Create a `run.iss` file with the following content:
 ```
 [Setup]
 AppName=Elsa
