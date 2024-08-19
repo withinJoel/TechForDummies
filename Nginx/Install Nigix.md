@@ -1,2 +1,2 @@
-type `sudo apt update`
-then type `sudo apt install nginx`
+* Type `sudo apt update`
+* Then type `sudo apt install nginx`
