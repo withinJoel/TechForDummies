@@ -20,3 +20,11 @@ user1@sysadmin-OptiPlex-3020:~$ ip addr show
     inet6 fe80::c5c9:64da:af01:bb60/64 scope link noprefixroute 
        valid_lft forever preferred_lft forever
 ```
+## To find the Gateway
+* type `ip route | grep default`
+* After `via` and before `dev` is your gateway address.
+* output:
+```
+user1@sysadmin-OptiPlex-3020:~$ ip route | grep default
+default via 10.0.100.1 dev enp2s0 proto dhcp metric 100
+```
