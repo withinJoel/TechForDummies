@@ -1,7 +1,9 @@
-* Create an App using Electron 
+# Create an App using Electron 
 
-# Shorcuts
+## Shorcuts
 ctrl shift i - for developer mode in the electron web app
+
+## Get Started
 1. Install Node.js
 2. create a folder called as "App" or name whatever you want
 3. open cmd
@@ -13,6 +15,7 @@ cd your-project/App/
 
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 8. And add these lines of code to that main.js file
+```
 const { app, BrowserWindow, screen, Menu } = require('electron');
 const path = require('path');
 
@@ -58,8 +61,10 @@ function createWindow() {
 }
 
 app.whenReady().then(createWindow);
+```
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 9. Then remove all the contents from the package.json and add this code 
+```
 {
   "name": "Elsa",
   "version": "1.1.6",
@@ -75,6 +80,7 @@ app.whenReady().then(createWindow);
     "electron": "^31.1.0"
   }
 }
+```
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 10. Once all the testing is over, It's now time to extract the app (`npm start` to test the program)
@@ -85,7 +91,8 @@ npm install -g electron-packager electron-builder
 
 13. to create a package install inno setup from this site.
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-14. And create a run.iss file outside the folder that you want to compress and make a setup 
+14. And create a run.iss file outside the folder that you want to compress and make a setup.
+```
 [Setup]
 AppName=Elsa
 AppVersion=1.1.4
@@ -110,6 +117,7 @@ Name: "{group}\Elsa"; Filename: "{app}\Elsa.exe"; IconFilename: "{app}\Elsa.exe"
 
 [Run]
 Filename: "{app}\Elsa.exe"; Description: "{cm:LaunchProgram,Elsa}"; Flags: nowait postinstall skipifsilent
+```
 ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 open the code using iss and compile and run 
@@ -120,10 +128,12 @@ done!
 
 
 /////////////////////////////////////////////////////////////////Issues/////////////////////////////////////////////////////////////////////////////////////////////
-/////Icon not loading in the explorer
+## Icon not loading in the explorer
 * run cmd as admin
 * paste this code 
+```
 ie4uinit.exe -ClearIconCache
 taskkill /IM explorer.exe /F
 DEL /A /Q "%localappdata%\IconCache.db"
 start explorer.exe
+```
