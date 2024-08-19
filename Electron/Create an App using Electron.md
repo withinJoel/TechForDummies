@@ -7,12 +7,12 @@
 1. Install Node.js
 2. create a folder called as "App" or name whatever you want
 3. open cmd
-4. now go to the folder of you project like "cd.." and so on to the project directory and then to you created folder in this case "App"
+4. now go to the folder of you project like `cd..` and so on to the project directory and then to you created folder in this case "App"
 cd your-project/App/
-5. enter this command "npm init -y"
-6. then this command "npm install electron --save-dev"
-7. then create a main.js inside the "App" folder
-8. And add these lines of code to that main.js file
+5. enter this command `npm init -y`
+6. then this command `npm install electron --save-dev`
+7. then create a `main.js` inside the `App` folder
+8. And add these lines of code to that `main.js` file
 ```
 const { app, BrowserWindow, screen, Menu } = require('electron');
 const path = require('path');
@@ -60,7 +60,7 @@ function createWindow() {
 
 app.whenReady().then(createWindow);
 ```
-9. Then remove all the contents from the package.json and add this code 
+9. Then remove all the contents from the `package.json` and add this code 
 ```
 {
   "name": "Elsa",
@@ -79,11 +79,11 @@ app.whenReady().then(createWindow);
 }
 ```
 10. Once all the testing is over, It's now time to extract the app (`npm start` to test the program)
-11. enter this command in the cmd in the same location where the main.js is present.
-npm install -g electron-packager electron-builder
-12. Then type "npm run package" in the cmd.
+11. enter the above and the below command in the cmd in the same location where the `main.js` is present.
+`npm install -g electron-packager electron-builder`
+12. Then type `npm run package` in the cmd.
 13. to create a package install inno setup from this site.
-14. And create a run.iss file outside the folder that you want to compress and make a setup.
+14. And create a `run.iss` file outside the folder that you want to compress and make a setup.
 ```
 [Setup]
 AppName=Elsa
