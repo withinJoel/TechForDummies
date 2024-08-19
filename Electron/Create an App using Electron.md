@@ -113,7 +113,7 @@ Filename: "{app}\Elsa.exe"; Description: "{cm:LaunchProgram,Elsa}"; Flags: nowai
 15. open the code using iss and compile and run 
 16. done!
 
-/////////////////////////////////////////////////////////////////Issues/////////////////////////////////////////////////////////////////////////////////////////////
+# Issues
 ## Icon not loading in the explorer
 * run cmd as admin
 * paste this code 
