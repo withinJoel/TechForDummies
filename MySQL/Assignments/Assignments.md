@@ -19,7 +19,7 @@ SELECT id, name
 FROM employee
 WHERE department = 'HR';  -- Replace 'HR' with the specific department name
 ```
-List of Employees by Project:
+List of Employees by Project: ✅
 ```
 SELECT e.id, e.name
 FROM employee e
@@ -54,7 +54,7 @@ SELECT e.name AS employee_name, p.name AS project_name, p.description
 FROM employee e
 JOIN project p ON e.id = p.employee_id;
 ```
-Project Allocation per Department:
+Project Allocation per Department: ✅
 ```
 SELECT d.name AS department_name, COUNT(DISTINCT p.id) AS project_count, COUNT(DISTINCT e.id) AS employee_count
 FROM department d
@@ -62,7 +62,7 @@ LEFT JOIN employee e ON d.name = e.department
 LEFT JOIN project p ON e.id = p.employee_id
 GROUP BY d.name;
 ```
-Employees Working on Multiple Projects:
+Employees Working on Multiple Projects: ✅
 ```
 SELECT e.id, e.name, GROUP_CONCAT(p.name) AS projects
 FROM employee e
