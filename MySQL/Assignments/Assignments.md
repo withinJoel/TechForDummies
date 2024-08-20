@@ -4,13 +4,13 @@
 ```
 SELECT * FROM department;
 ```
-2. **Employee Count per Department:**
+2. **Employee Count per Department:** ✅
    - Query to count the number of employees in each department.
 
 ```
-SELECT department_id, COUNT(*) AS employee_count
+SELECT id, COUNT(*) AS employee_count
 FROM employee
-GROUP BY department_id;
+GROUP BY id;
 ```
 3. **List of Projects:**✅
    - Query to list all projects with their respective IDs, names, and department associations.
@@ -36,7 +36,7 @@ JOIN project_employee pe ON e.id = pe.employee_id
 WHERE pe.project_id = (SELECT id FROM project WHERE name = 'ProjectName');  -- Replace 'ProjectName' with the project name
 ```
 
-6. **Employee Details:**
+6. **Employee Details:** ✅
    - Query to retrieve all details (e.g., name, job title, department) of a specific employee based on their ID or name.
 
 ```
