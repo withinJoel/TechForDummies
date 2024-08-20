@@ -10,7 +10,7 @@ GROUP BY department;
 List of Projects: ✅
 SELECT id, name, description, employee_id FROM project;
 
-Employees in a Specific Department:
+Employees in a Specific Department: ✅
 SELECT id, name
 FROM employee
 WHERE department = 'HR';  -- Replace 'HR' with the specific department name
@@ -21,7 +21,7 @@ FROM employee e
 JOIN project p ON e.id = p.employee_id
 WHERE p.id = 1;  -- Replace 1 with the specific project ID
 
-Employee Details:
+Employee Details: ✅
 SELECT *
 FROM employee
 WHERE id = 1;  -- Replace 1 with the specific employee ID or use a name-based search if needed
