@@ -9,7 +9,10 @@ SELECT * FROM department;
    
 3. **List of Projects:**
    - Query to list all projects with their respective IDs, names, and department associations.
-   
+
+```
+SELECT * FROM project;
+```
 4. **Employees in a Specific Department:**
    - Query to retrieve the names and IDs of all employees in a specific department (e.g., HR, IT, etc.).
    
