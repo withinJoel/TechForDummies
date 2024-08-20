@@ -1,5 +1,5 @@
 # MySQL Assignments
-1. **List of Departments:**
+1. **List of Departments:** ✅
    - Query to list all departments with their respective IDs and names.
 ```
 SELECT * FROM department;
@@ -12,7 +12,7 @@ SELECT department_id, COUNT(*) AS employee_count
 FROM employee
 GROUP BY department_id;
 ```
-3. **List of Projects:**
+3. **List of Projects:**✅
    - Query to list all projects with their respective IDs, names, and department associations.
 
 ```
