@@ -82,7 +82,7 @@ FROM department d
 LEFT JOIN employee e ON d.name = e.department
 GROUP BY d.name;
 ```
-Project Progress Report:
+Project Progress Report: ✅
 ```
 SELECT p.name AS project_name, p.description, COUNT(DISTINCT e.id) AS employees_involved
 FROM project p
