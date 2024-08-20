@@ -12,7 +12,7 @@ SELECT id, COUNT(*) AS employee_count
 FROM employee
 GROUP BY id;
 ```
-3. **List of Projects:**✅
+3. **List of Projects:** ✅
    - Query to list all projects with their respective IDs, names, and department associations.
 
 ```
