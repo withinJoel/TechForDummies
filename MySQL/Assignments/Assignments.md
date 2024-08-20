@@ -2,12 +2,12 @@
 List of Departments:  ✅
 SELECT id, name FROM department;
 
-Employee Count per Department:
+Employee Count per Department: ✅
 SELECT department, COUNT(*) AS employee_count
 FROM employee
 GROUP BY department;
 
-List of Projects:
+List of Projects: ✅
 SELECT id, name, description, employee_id FROM project;
 
 Employees in a Specific Department:
