@@ -32,14 +32,14 @@ SELECT *
 FROM employee
 WHERE id = 1;  -- Replace 1 with the specific employee ID or use a name-based search if needed
 ```
-List of Projects in Each Department:
+List of Projects in Each Department: ✅
 ```
 SELECT p.id AS project_id, p.name AS project_name, d.name AS department_name
 FROM project p
 JOIN employee e ON p.employee_id = e.id
 JOIN department d ON e.department = d.name;
 ```
-Departments with No Employees:
+Departments with No Employees: ✅
 ```
 SELECT d.id, d.name
 FROM department d
@@ -48,7 +48,7 @@ WHERE e.id IS NULL;
 ```
 # Complicated Reports
 
-Employee Project Allocation:
+Employee Project Allocation: ✅
 ```
 SELECT e.name AS employee_name, p.name AS project_name, p.description
 FROM employee e
@@ -71,6 +71,7 @@ GROUP BY e.id
 HAVING COUNT(p.id) > 1;
 ```
 Departmental Employee Turnover:
+* Note: Requires table modification.
 ```
 -- This query assumes a simple turnover calculation and requires date fields
 SELECT d.name AS department_name,
