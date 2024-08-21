@@ -1,27 +1,25 @@
-/*
-    Demo
- */
-select name, id from department;
+# Demo
+`select name, id from department;
 
-select distinct name from department where id > 1;
+`select distinct name from department where id > 1;
 
-select * from department where id > 1;
+`select * from department where id > 1;
 
-select name from department group by name;
+`select name from department group by name;
 
-select department from employee group by department;
+`select department from employee group by department;
 
-select employee.age , employee.department from employee where employee.age > 1 and employee.department is not null;
+`select employee.age , employee.department from employee where employee.age > 1 and employee.department is not null;
 
-select employee.age, employee.department from employee where employee.age > 1 or employee.name = 'joel';
+`select employee.age, employee.department from employee where employee.age > 1 or employee.name = 'joel';
 
-select employee.age from employee where employee.age is not null;
+`select employee.age from employee where employee.age is not null;
 
-select min(age) from employee where age> 1;
+`select min(age) from employee where age> 1;
 
-select max(age) from employee where age > 1;
+`select max(age) from employee where age > 1;
 
-select avg(age) from employee where age > 1;
+`select avg(age) from employee where age > 1;
 
 select sum(age) from employee where age > 1;
 
