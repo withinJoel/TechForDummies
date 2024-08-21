@@ -20,28 +20,43 @@ select department from employee group by department;
 ```
 
 
-`select employee.age , employee.department from employee where employee.age > 1 and employee.department is not null;
+```
+select employee.age , employee.department from employee where employee.age > 1 and employee.department is not null;
+```
 
-`select employee.age, employee.department from employee where employee.age > 1 or employee.name = 'joel';
+```
+select employee.age, employee.department from employee where employee.age > 1 or employee.name = 'joel';
+```
 
-`select employee.age from employee where employee.age is not null;
+```
+select employee.age from employee where employee.age is not null;
+```
+```
+select min(age) from employee where age> 1;
+```
 
-`select min(age) from employee where age> 1;
-
-`select max(age) from employee where age > 1;
-
-`select avg(age) from employee where age > 1;
-
+```
+select max(age) from employee where age > 1;
+```
+```
+select avg(age) from employee where age > 1;
+```
+```
 select sum(age) from employee where age > 1;
-
+```
+```
 select count(age) from employee where age > 1;
-
+```
+```
 select min(age) as min_age, max(age) as max_age, avg(age) as avg_age, sum(age) as sum_age, count(age) as count_age from employee where age > 1;
-
+```
+```
 select name from employee where name like 'joe_';
-
+```
+```
 select name from employee where name like '%jo%';
-
+```
+```
 select department from employee where department in ('Legal', 'Frontend');
 
 select name, age from employee where age between 20 and 24 order by name, age;
