@@ -58,27 +58,38 @@ select name from employee where name like '%jo%';
 ```
 ```
 select department from employee where department in ('Legal', 'Frontend');
-
+```
+```
 select name, age from employee where age between 20 and 24 order by name, age;
-
+```
+```
 select department as dept from employee;
-
+```
+```
 select employee.department from employee where department = 'Legal' group by department having count(1);
-
+```
+```
 select employee.department from employee where department is not null group by department;
-
+```
+```
 select employee.department from employee where exists(select department.name from department where department.name = employee.department);
-
+```
+```
 select all employee.name from employee where true;
-
+```
+```
 select all employee.department from employee where employee.department = any (select department.name from department where department.name is not null);
-
+```
+```
 select count(age) from employee where age > 20;
-
+```
+```
 select name from department union select department from employee; -- only the distinct values
-
+```
+```
 select name from department union all select department from employee; -- will return all the values
-
+```
+```
 select age,
 case
     when age > 20 then 'they are above 20'
@@ -86,13 +97,19 @@ case
     else 'there is no one'
 end
 from employee;
-
+```
+```
 select department.name, employee.department from employee right join department on department.name = employee.department;
+```
+```
 select department.name, employee.department from employee right join department on employee.department = department.name;
-
+```
+```
 select employee.department, department.name from employee right outer join department on employee.department = department.name;
+```
+```
 select employee.department, department.name from employee left outer join department on employee.department = department.name;
-
+```
 select employee.department, department.name from employee left join department on employee.department = department.name;
 select employee.department, department.name from employee left join department on department.name = employee.department;
 
