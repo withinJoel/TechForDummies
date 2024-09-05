@@ -3,8 +3,9 @@
 * Disclaimer only to be used inside the terminal for Ubuntu OS only.
 
 ## To start MySQL service
-* `mysql -u root -p` - To login inside the MySQL
+* `mysql -u root -p` - To login inside the MySQL.
 * Based on my experience go with this password: `test123!`
+
 ## To stop MySQL service
 * `exit;` - To stop the MySQL service.
 
