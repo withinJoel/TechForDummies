@@ -9,6 +9,15 @@
 ## To stop MySQL service
 * `exit;` - To stop the MySQL service.
 
+## To delete MySql fully from your desktop
+```
+sudo systemctl stop mysql
+sudo apt-get remove --purge mysql-server mysql-client mysql-common mysql-server-core-* mysql-client-core-*
+sudo rm -rf /etc/mysql /var/lib/mysql
+sudo apt-get autoremove
+sudo apt-get autoclean
+```
+
 ## To create a table
 * Structure:
 ```
