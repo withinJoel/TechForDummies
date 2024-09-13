@@ -8,3 +8,5 @@
 * `https://claude.ai/new`
 
 * `https://chat.hix.ai/`
+
+* `https://gemini.google.com/app`
