@@ -5,3 +5,4 @@ window key + . - To open the emoji menu
 ctrl z - To undo
 ctrl shift z - To redo
 ctrl click - to open a link
+ctrl any arrow key - to jump text
