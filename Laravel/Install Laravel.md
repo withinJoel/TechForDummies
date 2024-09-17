@@ -1,4 +1,4 @@
-Installation of Laravel
+# Installation of Laravel
 
 1. Download these required ones (If you have already have skip it else download it)
   *Download PHP from https://www.techspot.com/downloads/5680-php.html
