@@ -19,3 +19,4 @@
 * `apache2 -version` - To get the application version.
 * `sudo touch hello.txt` - To create a new file.
 * `sudo mkdir hello` - To create a new directory.
+* `tree` - To show all the files with respect to their folders.
