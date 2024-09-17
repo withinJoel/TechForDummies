@@ -7,12 +7,12 @@
 * `sudo apt install <app name>` - To install an application.
 * `history` - To get the history of all your commands that you typed in the terminal.
 * `rm -rf Testing` - To delete a file or a folder here `testing` is the folder name.
-* `quit` - To close the terminal.
+
 * `sudo systemctl start apache2` - To start an application.
 * `sudo systemctl status apache2` - To see the application status.
 * `sudo systemctl stop apache2` - To stop an application.
 * `which apache2` - Tells the installed path of the application.
-* `clear` - To clear the terminal.
+
 
 * `lsb_release -a` - To know the version of your ubuntu OS.
 * `sudo lsof -c java` - To find something by using its name.
@@ -21,6 +21,10 @@
 * `sudo mkdir hello` - To create a new directory.
 * `tree` - To show all the files with respect to their folders.
 
+
+## Terminal
+* `clear` - To clear the terminal.
+* `quit` - To close the terminal.
 
 ## Networking
 * `ifconfig` - To know your network details
