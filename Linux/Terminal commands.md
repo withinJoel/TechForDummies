@@ -20,3 +20,4 @@
 * `sudo touch hello.txt` - To create a new file.
 * `sudo mkdir hello` - To create a new directory.
 * `tree` - To show all the files with respect to their folders.
+* `ifconfig` - To know your network details
