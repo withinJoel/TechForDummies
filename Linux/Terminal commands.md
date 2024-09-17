@@ -21,6 +21,7 @@ To know more visit: `https://jumpcloud.com/blog/how-to-upgrade-ubuntu-20-04-to-u
 
 ## Terminal
 * `history` - To get the history of all your commands that you typed in the terminal.
+* `history -c` - To clear your terminal history.
 * `clear` - To clear the terminal.
 * `quit` - To close the terminal.
 
