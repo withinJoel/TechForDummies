@@ -30,5 +30,5 @@
 * `which apache2` - Tells the installed path of the application.
 
 ## Networking
-* `ifconfig` - To know your network details
+* `ifconfig` or `ip address show` - To know your network details.
 * `sudo scp registration-oneApp.zip hema@10.0.102.33:/home/hema/Desktop/` - To transfer a file/folder from one machine to another (should be connected over a network)(Recommended: Wired network) (Here `Hema` is the username and `10.0.102.33` is the ip address and `home/hema/Desktop` is the path in which the file should be pasted to. (Install: `sudo apt install openssh-server` Required)
