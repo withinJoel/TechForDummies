@@ -1,6 +1,10 @@
 ## OS
 * `lsb_release -a` - To know the version of your ubuntu OS.
-
+* To Update your system to the latest release
+```
+$ sudo apt install update-manager-core
+$ sudo do-release-upgrade
+```
 ## Basic
 * `sudo --help` - If you need help.
 * `ls` - To list all the files in that directory.
