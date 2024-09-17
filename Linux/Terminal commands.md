@@ -2,6 +2,7 @@
 * `lsb_release -a` - To know the version of your ubuntu OS.
 
 ## Basic
+* `sudo --help` - If you need help.
 * `ls` - To list all the files in that directory.
 * `cd` - To change the directory.
 * `sudo rm -rf Testing` - To delete a file or a folder here `testing` is the folder name.
