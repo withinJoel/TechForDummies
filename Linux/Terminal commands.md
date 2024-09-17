@@ -8,3 +8,5 @@
 * `history` - To get the history of all your commands that you typed in the terminal.
 * `rm -rf Testing` - To delete a file or a folder here `testing` is the folder name.
 * `quit` - To close the terminal.
+* `sudo systemctl start apache2` - To start an application.
+* `sudo systemctl stop apache2` - To stop an application.
