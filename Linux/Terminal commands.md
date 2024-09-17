@@ -10,3 +10,4 @@
 * `quit` - To close the terminal.
 * `sudo systemctl start apache2` - To start an application.
 * `sudo systemctl stop apache2` - To stop an application.
+* `which apache2` - Tells the installed path of the application.
