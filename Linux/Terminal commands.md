@@ -13,11 +13,15 @@
 * `sudo systemctl stop apache2` - To stop an application.
 * `which apache2` - Tells the installed path of the application.
 * `clear` - To clear the terminal.
-* `sudo scp registration-oneApp.zip hema@10.0.102.33:/home/hema/Desktop/` - To transfer a file/folder from one machine to another (should be connected over a network)(Recommended: Wired network) (Here `Hema` is the username and `10.0.102.33` is the ip address and `home/hema/Desktop` is the path in which the file should be pasted to. (Install: `sudo apt install openssh-server` Required)
+
 * `lsb_release -a` - To know the version of your ubuntu OS.
 * `sudo lsof -c java` - To find something by using its name.
 * `apache2 -version` - To get the application version.
 * `sudo touch hello.txt` - To create a new file.
 * `sudo mkdir hello` - To create a new directory.
 * `tree` - To show all the files with respect to their folders.
+
+
+## Networking
 * `ifconfig` - To know your network details
+* `sudo scp registration-oneApp.zip hema@10.0.102.33:/home/hema/Desktop/` - To transfer a file/folder from one machine to another (should be connected over a network)(Recommended: Wired network) (Here `Hema` is the username and `10.0.102.33` is the ip address and `home/hema/Desktop` is the path in which the file should be pasted to. (Install: `sudo apt install openssh-server` Required)
