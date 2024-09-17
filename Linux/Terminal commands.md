@@ -4,4 +4,5 @@
     * Extract it
     * Go to the bin folder
     * Open that folder in the terminal and type `sh filename.sh` (There will be only be one file that ends with .sh)
-* to install something - `sudo apt install <app name>`
+* To install something - `sudo apt install <app name>`
+* `history` - To get the history of all your commands that you typed in the terminal.
