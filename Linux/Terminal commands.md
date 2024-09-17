@@ -11,6 +11,7 @@
 * `sudo mkdir hello` - To create a new directory.
 * `tree` - To show all the files with respect to their folders.
 * `pwd` - To print the current directory.
+* `echo hola` - To print something on the terminal.
 
 ## Terminal
 * `history` - To get the history of all your commands that you typed in the terminal.
