@@ -5,6 +5,8 @@
 $ sudo apt install update-manager-core
 $ sudo do-release-upgrade
 ```
+To know more visit: `https://jumpcloud.com/blog/how-to-upgrade-ubuntu-20-04-to-ubuntu-22-04`
+
 ## Basic
 * `sudo --help` - If you need help.
 * `ls` - To list all the files in that directory.
