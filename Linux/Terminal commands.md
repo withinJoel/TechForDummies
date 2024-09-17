@@ -7,14 +7,17 @@
 
 
 
-* `lsb_release -a` - To know the version of your ubuntu OS.
+
 * `sudo lsof -c java` - To find something by using its name.
 
 * `sudo touch hello.txt` - To create a new file.
 * `sudo mkdir hello` - To create a new directory.
 * `tree` - To show all the files with respect to their folders.
 
+## OS
+* `lsb_release -a` - To know the version of your ubuntu OS.
 
+## 
 ## Terminal
 * `history` - To get the history of all your commands that you typed in the terminal.
 * `clear` - To clear the terminal.
