@@ -4,3 +4,4 @@
     * Extract it
     * Go to the bin folder
     * Open that folder in the terminal and type `sh filename.sh` (There will be only be one file that ends with .sh)
+* to install something - `sudo apt install <app name>`
