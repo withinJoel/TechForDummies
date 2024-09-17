@@ -17,3 +17,4 @@
 * `lsb_release -a` - To know the version of your ubuntu OS.
 * `sudo lsof -c java` - To find something by using its name.
 * `apache2 -version` - To get the application version.
+* `sudo touch hello.txt` - To create a new file.
