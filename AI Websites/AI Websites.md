@@ -10,3 +10,5 @@
 * `https://chat.hix.ai/`
 
 * `https://gemini.google.com/app`
+
+* `https://github.com/marketplace/models` (If you have access to the github models)
