@@ -1,3 +1,4 @@
+Note: These commands are with respect to Linux Ubuntu OS.
 ## OS
 * `lsb_release -a` - To know the version of your ubuntu OS.
 * To Update your system to the latest release
