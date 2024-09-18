@@ -1,2 +1,2 @@
 # Documentation
-* The ultimate readme for any of of our doubts in the field of computers.
+* The ultimate readme for any of your doubts in the field of computers.
