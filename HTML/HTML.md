@@ -1,7 +1,7 @@
 # HTML
 
 ## Head Tags
-1. <meta charset="UTF-8" />
+1 `<meta charset="UTF-8" />`
 * Purpose: Specifies the character encoding for the HTML document. UTF-8 is the most commonly used encoding and supports a wide range of characters.
 * Example: <meta charset="UTF-8" />
 
