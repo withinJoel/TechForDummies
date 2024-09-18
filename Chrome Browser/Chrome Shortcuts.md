@@ -9,4 +9,4 @@
 * ctrl + p - To print the page.
 * ctrl + o - To open a file.
 * ctrl + k or ctrl + l or ctrl + e - To search the web
-* ctrl + w - To close the window.
+* ctrl + w - To close the tab.
