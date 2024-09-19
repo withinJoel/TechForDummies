@@ -7,4 +7,4 @@
 * `deb [signed-by=/etc/apt/keyrings/kubernetes-apt-keyring.gpg] https://pkgs.k8s.io/core:/stable:/v1.28/deb/`
 * `sudo apt update`
 
-# ![Screenshot from 2024-09-19 16-19-50](https://github.com/user-attachments/assets/ef959e80-710c-426f-89cd-0e956700216f)
+![Screenshot from 2024-09-19 16-19-50](https://github.com/user-attachments/assets/ef959e80-710c-426f-89cd-0e956700216fudge)
