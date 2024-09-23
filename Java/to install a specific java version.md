@@ -1,7 +1,7 @@
 ## For Ubuntu
 * `wget https://corretto.aws/downloads/latest/amazon-corretto-8-x64-linux-jdk.deb` (Here we are installing Amazon correto 1.8)
 * `sudo dpkg -i amazon-corretto-8-x64-linux-jdk.deb`
-* (If you get an error in step 2 then go to step 3 else skip step 3.)
+* (If you get an error in step 2 like the below exception then go to step 3 else skip step 3.)
 ```
 dpkg: dependency problems prevent configuration of java-1.8.0-amazon-corretto-jdk:amd64:
  java-1.8.0-amazon-corretto-jdk:amd64 depends on java-common; however:
