@@ -15,6 +15,9 @@ sudo chown -R mysql:mysql /usr/local/mysql
 sudo apt-get install libaio1
 ```
 ```
+sudo apt-get install libncurses5
+```
+```
 cd /usr/local/mysql
 sudo scripts/mysql_install_db --user=mysql
 ```
