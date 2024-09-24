@@ -16,7 +16,7 @@ To know more visit: `https://jumpcloud.com/blog/how-to-upgrade-ubuntu-20-04-to-u
 * `sudo lsof -c java` - To find something by using its name.
 * `sudo touch hello.txt` - To create a new file.
 * `sudo mkdir hello` - To create a new directory.
-* `tree` - To show all the files with respect to their folders.
+* `tree` - To show all the files with respect to their folders. (You should install this first `sudo apt install tree`)
 * `pwd` - To print the current directory.
 * `echo hola` - To print something on the terminal.
 
