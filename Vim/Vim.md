@@ -6,4 +6,6 @@
 * `shift :` - To enter the command mode.
 	* `q` - To quit vim.
 	* `q!` - To quit without saving the changes that you made.
-	* `wq` - To save the changes and to quit. 
+	* `wq` - To save the changes and to quit.
+	* `syntax on` - To turn on the syntax highlighting.
+	* `syntax off` - To turn off the syntax highlighting.
