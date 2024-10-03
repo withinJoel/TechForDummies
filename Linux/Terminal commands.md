@@ -19,7 +19,7 @@ To know more visit: `https://jumpcloud.com/blog/how-to-upgrade-ubuntu-20-04-to-u
 * `tree` - To show all the files with respect to their folders. (You should install this first `sudo apt install tree`)
 * `pwd` - To print the current directory.
 * `echo hola` - To print something on the terminal.
-
+* `less <filename>` - To open a file to only read its contents alone with no editing (To close just enter `q`)
 ## Terminal
 * `history` - To get the history of all your commands that you typed in the terminal.
 * `history -c` - To clear your terminal history.
