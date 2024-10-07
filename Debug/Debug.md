@@ -5,3 +5,8 @@
 * Check if the resources for your project exists in the path that your code is pointing towards.
 
 ## Additional Tips
+* Take a walk outside.
+* Get a coffee break.
+* Do something else.
+* Take a power nap.
+* Do what you love.
