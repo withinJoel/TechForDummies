@@ -13,6 +13,7 @@ To know more visit: `https://jumpcloud.com/blog/how-to-upgrade-ubuntu-20-04-to-u
 * `ls` - To list all the files in that directory.
 * `cd` - To change the directory.
 * `rm -r <foldername>` - To delete the folder
+* `rm <filename>` - To remove a file.
 * `sudo rm -rf Testing` - To delete a file or a folder here `testing` is the folder name.
 * `sudo lsof -c java` - To find something by using its name.
 * `sudo touch hello.txt` - To create a new file.
