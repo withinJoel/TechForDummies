@@ -4,8 +4,6 @@ on:
   push:
     branches:
       - main # Trigger on pushes to the main branch
-  schedule:
-    - cron: '0 0 * * *' # Daily backup at midnight UTC
   workflow_dispatch: # Allows you to manually trigger the backup
 
 jobs:
