@@ -59,3 +59,8 @@ nameserver 127.0.0.53
 options edns0 trust-ad
 search .
 ```
+
+## To connect via SSH
+```
+ssh root@54.245.191.10
+```
