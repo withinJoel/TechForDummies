@@ -3,6 +3,7 @@
 * ctrl shift t - to open the closed tab.
 * ctrl + n - To open a new window.
 * ctrl + h - to open history.
+* ctrl + e - To search.
 * ctrl + j - To open the downloads.
 * ctrl + r - To reload.
 * ctrl + u - To see the source code.
