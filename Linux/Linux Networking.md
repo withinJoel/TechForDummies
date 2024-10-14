@@ -65,6 +65,7 @@ search .
 ssh root@54.245.191.10
 ```
 ## To connect via SSH with GUI support
+* Note: It will not open like a GUI based OS but rather you can open images and other media files which you will not be able to in the above command.
 ```
 ssh -X root@54.201.45.37
 ```
