@@ -12,6 +12,8 @@ To know more visit: `https://jumpcloud.com/blog/how-to-upgrade-ubuntu-20-04-to-u
 * `sudo --help` - If you need help.
 * `ls` - To list all the files in that directory.
 * `cd` - To change the directory.
+* `uname` - To get the basic OS details.
+* `whoami` - To know the user.
 * `man` - to see the manual for that command. example: `man echo`
 * `rm -r <foldername>` - To delete the folder
 * `rm <filename>` - To remove a file.
