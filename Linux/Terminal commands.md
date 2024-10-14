@@ -15,6 +15,7 @@ To know more visit: `https://jumpcloud.com/blog/how-to-upgrade-ubuntu-20-04-to-u
 * `uname` - To get the basic OS details.
 * `whoami` - To know the user.
 * `man` - to see the manual for that command. example: `man echo`
+* `whatis` - Similar to man but tells the usage in short. example: `whatis echo`
 * `rm -r <foldername>` - To delete the folder
 * `rm <filename>` - To remove a file.
 * `grep -r "<what you want to search>"` - This command allows you to search for a specific keyword within the current directory. For example, if you want to find the name `Joel`, you can use this command to look for that keyword across all the files in the directory.
