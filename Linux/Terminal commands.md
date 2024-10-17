@@ -18,8 +18,10 @@ To know more visit: `https://jumpcloud.com/blog/how-to-upgrade-ubuntu-20-04-to-u
 * `whatis` - Similar to man but tells the usage in short. example: `whatis echo`
 * `rm -r <foldername>` - To delete the folder
 * `rm <filename>` - To remove a file.
-* `grep -r "<what you want to search>"` - This command allows you to search for a specific keyword within the current directory. For example, if you want to find the name `Joel`, you can use this command to look for that keyword across all the files in the directory.
-* `sudo grep -r "keyword" /` - For global search.
+* `grep -r "<keyword>` - To search for something but will show the line and the file name.
+  * `grep -r "keyword" /` - For global search.
+  * `grep -rl "keyword"` - To search for something but will only list the file name alone.(`-r` - `recursively`, `l` - `list`)
+  * `grep -rl "keyword" | wc -l` - To count the results (`wc` - `word count`, -l - `list`)
 * `sudo rm -rf Testing` - To delete a file or a folder here `testing` is the folder name.
 * `sudo lsof -c java` - To find something by using its name.
 * `sudo touch hello.txt` - To create a new file.
