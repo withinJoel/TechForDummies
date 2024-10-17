@@ -30,7 +30,8 @@ To know more visit: `https://jumpcloud.com/blog/how-to-upgrade-ubuntu-20-04-to-u
 * `less <filename>` - To open a file to only read its contents alone with no editing (To close just enter `q`)
 ## Terminal
 * `history` - To get the history of all your commands that you typed in the terminal.
-* `history -c` - To clear your terminal history.
+   * `history -c` - To clear your terminal history.
+   * `history -d <number on the left of the history>` - This will clear the history with the number of which you want to clear.
 * `clear` - To clear the terminal.
 * `quit` - To close the terminal.
 
