@@ -21,7 +21,7 @@ To know more visit: `https://jumpcloud.com/blog/how-to-upgrade-ubuntu-20-04-to-u
 * `grep -r "<keyword>` - To search for something but will show the line and the file name.
   * `grep -r "keyword" /` - For global search.
   * `grep -rl "keyword"` - To search for something but will only list the file name alone.(`-r` - `recursively`, `l` - `list`)
-  * `grep -rl "keyword" | wc -l` - To count the results (`wc` - `word count`, -l - `list`)
+  * `grep -rl "keyword" | wc -l` - To count the results (`wc` - `word count`, `-l` - `list`)
 * `sudo rm -rf Testing` - To delete a file or a folder here `testing` is the folder name.
 * `sudo lsof -c java` - To find something by using its name.
 * `sudo touch hello.txt` - To create a new file.
