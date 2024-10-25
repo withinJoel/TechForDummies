@@ -41,7 +41,7 @@ To know more visit: `https://jumpcloud.com/blog/how-to-upgrade-ubuntu-20-04-to-u
 * To install apps for .gz extenstions
     * Extract it
     * Go to the bin folder
-    * Open that folder in the terminal and type `sh filename.sh` (There will be only be one file that ends with .sh)
+    * Open that folder in the terminal and type `sh filename.sh` (There will be only one file that ends with .sh)
 * `sudo apt install <app name>` - To install an application.
 * `apache2 -version` - To get the application version.
 * `sudo systemctl start apache2` - To start an application.
