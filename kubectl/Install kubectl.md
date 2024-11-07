@@ -9,5 +9,3 @@
 * `sudo apt update`
 * `sudo apt install kubectl`
 * `kubectl version`
-
-![Screenshot from 2024-09-19 16-19-50](https://github.com/user-attachments/assets/ef959e80-710c-426f-89cd-0e956700216fudge)
