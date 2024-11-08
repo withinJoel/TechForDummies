@@ -52,3 +52,22 @@ To know more visit: `https://jumpcloud.com/blog/how-to-upgrade-ubuntu-20-04-to-u
 ## Networking
 * `ifconfig` or `ip address show` or `ip addr show` - To know your network details.
 * `sudo scp registration-oneApp.zip hema@10.0.102.33:/home/hema/Desktop/` - To transfer a file/folder from one machine to another (should be connected over a network)(Recommended: Wired network) (Here `Hema` is the username and `10.0.102.33` is the ip address and `home/hema/Desktop` is the path in which the file should be pasted to. (Install: `sudo apt install openssh-server` Required)
+
+## SSH
+* `ssh root@54.201.45.37` - To connect to 54.201.45.37 as root user.
+ * `-X` - Enable X11 forwarding (graphical apps) example `ssh -X root@54.201.45.37`
+ * `-v`	Verbose output (debugging mode)
+ * `-Y`	Enable trusted X11 forwarding
+ * `-C`	Enable compression
+ * `-p`	Specify port (default is 22)
+ * `-i`	Specify identity (private key) file
+ * `-L`	Local port forwarding
+ * `-R`	Remote port forwarding
+ * `-A`	Enable SSH agent forwarding
+ * `-T`	Disable pseudo-TTY allocation
+ * `-N`	No command (only for port forwarding)
+ * `-q`	Quiet mode (no output)
+ * `-o`	Specify SSH options
+ * `-e`	Change escape character
+ * `-l`	Specify login name
+ * `-f`	Run SSH in the background
