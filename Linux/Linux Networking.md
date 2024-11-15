@@ -67,6 +67,9 @@ ssh root@54.245.191.10
 ```
 ssh hema@10.0.102.33
 ```
+```
+ssh mageshwaran@10.0.102.18
+```
 * `root` is not the name of the user but rather the super user.
 * `hema` is the name of the user.
 ## To connect via SSH with GUI support
