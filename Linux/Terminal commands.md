@@ -33,6 +33,7 @@ To know more visit: `https://jumpcloud.com/blog/how-to-upgrade-ubuntu-20-04-to-u
 ## Terminal
 * `history` - To get the history of all your commands that you typed in the terminal.
    * `history -c` - To clear your terminal history.
+      * `rm ~/.bash_history` - If the above one does not work for some reason.
    * `history -d <number on the left of the history>` - This will clear the history with the number of which you want to clear.
 * `clear` - To clear the terminal.
 * `quit` - To close the terminal.
