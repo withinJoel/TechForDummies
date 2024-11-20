@@ -7,6 +7,12 @@
 * Then start the stack by entering this command `helm install age-fix-idau helm-repo/fd-site -f idau-stage.yml` (Since we are in the same folder we say `idau-stage.yml` if we are in a another folder modify accordingly.
 * Once it is started you can see the staging site (the link will be given after the command itself)
 
+## To execute a pod/ To enter inside a pod
+* `kubectl exec -it uscisupdates-i485principalpremium-deployment-5ffcb96d-qw9mm -- bash` here `uscisupdates-i485principalpremium-deployment-5ffcb96d-qw9mm` is the deployment name.
+
+## To delete a pod
+* `helm delete i485formupdates`  here `i485formupdates` is the pod name.
+
 ## Lets say you want to copy some file to the deployment(Place where all your static files like html, css are placed)
 * `kubectl cp idau-8.zip idau-stage-web-depeloyment-65d5b5b447-zwbs5:/tmp` here `idau-stage-web-depeloyment-65d5b5b447-zwbs5` could be anything based on your requirement and tmp is the temporary folder to avoid any clutter.
 * Then based on what server you are using lets `Nginx` then go to `usr/share/nginx/html` and your project folder that you are using to server your html files.
