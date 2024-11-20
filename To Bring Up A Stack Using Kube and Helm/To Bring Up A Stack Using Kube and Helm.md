@@ -11,7 +11,10 @@
 * `kubectl exec -it uscisupdates-i485principalpremium-deployment-5ffcb96d-qw9mm -- bash` here `uscisupdates-i485principalpremium-deployment-5ffcb96d-qw9mm` is the deployment name.
 
 ## To delete a pod
-* `helm delete i485formupdates`  here `i485formupdates` is the pod name.
+* `kubectl delete pod formupdatesi485-i485beneficiarypremium-deployment-556f79ccjj6zf` here `formupdatesi485-i485beneficiarypremium-deployment-556f79ccjj6zf` is the pod name.
+
+## To delete a pod service
+* `helm delete i485formupdates`  here `i485formupdates` is the service name.
 
 ## Lets say you want to copy some file to the deployment(Place where all your static files like html, css are placed)
 * `kubectl cp idau-8.zip idau-stage-web-depeloyment-65d5b5b447-zwbs5:/tmp` here `idau-stage-web-depeloyment-65d5b5b447-zwbs5` could be anything based on your requirement and tmp is the temporary folder to avoid any clutter.
