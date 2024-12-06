@@ -36,7 +36,7 @@ To know more visit: `https://jumpcloud.com/blog/how-to-upgrade-ubuntu-20-04-to-u
       * `rm ~/.bash_history` - If the above one does not work for some reason.
    * `history -d <number on the left of the history>` - This will clear the history with the number of which you want to clear.
 * `clear` - To clear the terminal.
-* `quit` - To close the terminal.
+* `exit` - To close the terminal.
 
 ## Application
 * To install apps for .gz extenstions
