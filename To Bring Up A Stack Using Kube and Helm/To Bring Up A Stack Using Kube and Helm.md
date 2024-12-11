@@ -1,6 +1,6 @@
 ## To Bring Up A Stack Using Kube and Helm
 * Login into the server (If you are using a server to login and to bring up the stack).
-* Most common way is `ssh -v 54.189.106.70` or `ssh -v joel.jolly@54.189.106.70` (Password would commonly be your LDAP account password) (To use this install ssh, `-v` - Is to verbose all the details, and then the IP address that you want to connect to)
+* Most common way is `ssh -v 54.189.106.70` or `ssh -v <user_name>@54.189.106.70` (Username and Password would commonly be your LDAP account password) (To use this install ssh, `-v` - Is to verbose all the details, and then the IP address that you want to connect to)
 * Go to the yaml file that you want to create or have created for example `idau-stage.yml`. Location: `home/yaml/joel/`
 * Edit the .yml file based on your requirements.
 * Save it then in the same folder where the .yml file is present enter this command `helm repo add helm-repo https://<git secert>@raw.githubusercontent.com/formsdirect/helm-repo/master/` (This will install the `helm-repo` to your directory)
