@@ -31,7 +31,6 @@
 |                    | macOS 10.12 (Sierra)         | September 20, 2016   | 2019                        |
 |                    | macOS 11 (Big Sur)           | November 12, 2020    | Ongoing                     |
 |                    | macOS 12 (Monterey)          | October 25, 2021     | Ongoing                     |
-
 | **Canonical**      | Ubuntu 4.10 (Warty Warthog)  | October 20, 2004     | April 30, 2006              |
 |                    | Ubuntu 6.06 (Dapper Drake)   | June 1, 2006         | July 14, 2009              |
 |                    | Ubuntu 8.04 (Hardy Heron)    | April 24, 2008       | May 9, 2013                |
