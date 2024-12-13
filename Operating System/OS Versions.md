@@ -17,7 +17,6 @@
 |                    | Windows 8.1                  | October 17, 2013     | January 10, 2023            |
 |                    | Windows 10                   | July 29, 2015        | October 14, 2025 (Planned)  |
 |                    | Windows 11                   | October 5, 2021      | Ongoing                     |
-
 | **Apple**          | Mac OS System 1              | January 24, 1984     | Obsolete                    |
 |                    | Mac OS System 6              | April 1988           | Obsolete                    |
 |                    | Mac OS System 7              | May 13, 1991         | Obsolete                    |
