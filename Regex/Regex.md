@@ -1,0 +1,35 @@
+# PHP Regular Expressions
+
+This guide covers regex patterns in PHP, progressing from simple to complex.
+
+| **Pattern**         | **Explanation**                                               | **Example**                                                                                                                                                         |
+|----------------------|---------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `/word/`            | Matches the exact word "word".                                | ```php $pattern = '/word/'; $text = 'This is a word.'; if (preg_match($pattern, $text)) { echo 'Match found!'; } ```                                               |
+| `/word/i`           | Case-insensitive match for "word".                            | ```php $pattern = '/word/i'; $text = 'This is a Word.'; if (preg_match($pattern, $text)) { echo 'Match found!'; } ```                                              |
+| `/w.rd/`            | Matches "ward", "word", etc. (`.` = any character).            | ```php $pattern = '/w.rd/'; $text = 'This is a ward.'; if (preg_match($pattern, $text)) { echo 'Match found!'; } ```                                               |
+| `/\d/`              | Matches any single digit (0–9).                               | ```php $pattern = '/\d/'; $text = 'I have 2 apples.'; if (preg_match($pattern, $text)) { echo 'Digit found!'; } ```                                                |
+| `/\D/`              | Matches any non-digit character.                              | ```php $pattern = '/\D/'; $text = '123'; if (preg_match($pattern, $text)) { echo 'Non-digit character found!'; } else { echo 'No non-digit character found.'; } ``` |
+| `/\w/`              | Matches alphanumeric characters and underscores.              | ```php $pattern = '/\w/'; $text = 'Hello!'; if (preg_match($pattern, $text)) { echo 'Word character found!'; } ```                                                 |
+| `/\W/`              | Matches non-word characters.                                  | ```php $pattern = '/\W/'; $text = 'HelloWorld'; if (preg_match($pattern, $text)) { echo 'Non-word character found!'; } ```                                          |
+| `/\s/`              | Matches whitespace (spaces, tabs, newlines).                  | ```php $pattern = '/\s/'; $text = 'Hello World'; if (preg_match($pattern, $text)) { echo 'Whitespace found!'; } ```                                                |
+| `/\S/`              | Matches any non-whitespace character.                         | ```php $pattern = '/\S/'; $text = '   '; if (preg_match($pattern, $text)) { echo 'Non-whitespace character found!'; } ```                                           |
+| `/^Hello/`          | Matches "Hello" at the start of the string.                   | ```php $pattern = '/^Hello/'; $text = 'Hello World'; if (preg_match($pattern, $text)) { echo 'Match found!'; } ```                                                 |
+| `/World$/`          | Matches "World" at the end of the string.                     | ```php $pattern = '/World$/'; $text = 'Hello World'; if (preg_match($pattern, $text)) { echo 'Match found!'; } ```                                                 |
+| `/[aeiou]/`         | Matches any vowel (a, e, i, o, u).                            | ```php $pattern = '/[aeiou]/'; $text = 'Hello'; if (preg_match($pattern, $text)) { echo 'Vowel found!'; } ```                                                      |
+| `/[^aeiou]/`        | Matches any character except vowels.                          | ```php $pattern = '/[^aeiou]/'; $text = 'Hello'; if (preg_match($pattern, $text)) { echo 'Consonant found!'; } ```                                                 |
+| `/[0-9]/`           | Matches any digit (0–9).                                      | ```php $pattern = '/[0-9]/'; $text = 'My age is 25.'; if (preg_match($pattern, $text)) { echo 'Digit found!'; } ```                                                |
+| `/[a-z]/`           | Matches any lowercase letter.                                 | ```php $pattern = '/[a-z]/'; $text = 'HELLO'; if (preg_match($pattern, $text)) { echo 'Lowercase letter found!'; } ```                                             |
+| `/[A-Z]/`           | Matches any uppercase letter.                                 | ```php $pattern = '/[A-Z]/'; $text = 'hello'; if (preg_match($pattern, $text)) { echo 'Uppercase letter found!'; } ```                                             |
+| `/[a-zA-Z]/`        | Matches any letter (uppercase or lowercase).                  | ```php $pattern = '/[a-zA-Z]/'; $text = '123'; if (preg_match($pattern, $text)) { echo 'Letter found!'; } ```                                                      |
+| `/[a-zA-Z0-9]/`     | Matches any alphanumeric character.                           | ```php $pattern = '/[a-zA-Z0-9]/'; $text = '!@#'; if (preg_match($pattern, $text)) { echo 'Alphanumeric character found!'; } ```                                    |
+| `/\bword\b/`        | Matches "word" as a whole word.                               | ```php $pattern = '/\bword\b/'; $text = 'This is a word.'; if (preg_match($pattern, $text)) { echo 'Whole word found!'; } ```                                       |
+| `/\Bword/`          | Matches "word" when not at a word boundary.                   | ```php $pattern = '/\Bword/'; $text = 'password'; if (preg_match($pattern, $text)) { echo 'Match found within a word!'; } ```                                       |
+| `/\d{3}/`           | Matches exactly 3 digits.                                     | ```php $pattern = '/\d{3}/'; $text = 'My code is 1234.'; if (preg_match($pattern, $text)) { echo 'Three digits found!'; } ```                                       |
+| `/\d{2,4}/`         | Matches 2 to 4 digits.                                        | ```php $pattern = '/\d{2,4}/'; $text = '12345'; if (preg_match($pattern, $text)) { echo 'Matched 2 to 4 digits!'; } ```                                            |
+| `/(ab)+/`           | Matches one or more repetitions of "ab".                      | ```php $pattern = '/(ab)+/'; $text = 'ababab'; if (preg_match($pattern, $text)) { echo 'Match found!'; } ```                                                       |
+| `/a|b/`             | Matches either "a" or "b".                                    | ```php $pattern = '/a|b/'; $text = 'cat'; if (preg_match($pattern, $text)) { echo 'Match found!'; } ```                                                            |
+| `/\(\d+\)/`         | Matches a digit inside parentheses, e.g., "(123)".            | ```php $pattern = '/\(\d+\)/'; $text = '(123)'; if (preg_match($pattern, $text)) { echo 'Match found!'; } ```                                                      |
+
+---
+
+* Do note in the above i have used php, But the basics of regex are all the same.
