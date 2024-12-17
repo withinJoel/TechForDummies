@@ -1,0 +1,24 @@
+| **Python Version**    | **Release Date**         | **End of Life (EOL)**    |
+|-----------------------|--------------------------|--------------------------|
+| **Python 1.0**        | January 26, 1994         | October 16, 2000         |
+| **Python 2.0**        | October 16, 2000         | January 1, 2020          |
+| **Python 2.1**        | April 17, 2001           | July 1, 2004             |
+| **Python 2.2**        | December 21, 2001        | December 1, 2004         |
+| **Python 2.3**        | July 29, 2003            | March 31, 2008           |
+| **Python 2.4**        | November 30, 2004        | March 19, 2008           |
+| **Python 2.5**        | September 19, 2006       | October 29, 2010         |
+| **Python 2.6**        | October 1, 2008          | October 29, 2013         |
+| **Python 2.7**        | July 3, 2010             | January 1, 2020          |
+| **Python 3.0**        | December 3, 2008         | March 13, 2012           |
+| **Python 3.1**        | June 27, 2009            | June 27, 2012            |
+| **Python 3.2**        | February 20, 2011        | February 20, 2016        |
+| **Python 3.3**        | September 29, 2012       | September 29, 2017       |
+| **Python 3.4**        | March 16, 2014           | March 18, 2019           |
+| **Python 3.5**        | September 13, 2015       | September 13, 2020       |
+| **Python 3.6**        | December 20, 2016        | December 20, 2021        |
+| **Python 3.7**        | June 27, 2018            | January 26, 2023         |
+| **Python 3.8**        | October 14, 2019         | October 14, 2024         |
+| **Python 3.9**        | October 5, 2020          | October 5, 2025          |
+| **Python 3.10**       | October 4, 2021          | October 2026 (Planned)   |
+| **Python 3.11**       | October 3, 2022          | October 2027 (Planned)   |
+| **Python 3.12**       | October 2, 2023          | October 2028 (Planned)   |
