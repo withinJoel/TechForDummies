@@ -7,6 +7,9 @@
 * Then start the stack by entering this command `helm install age-fix-idau helm-repo/fd-site -f idau-stage.yml` (Since we are in the same folder we say `idau-stage.yml` if we are in a another folder modify accordingly.
 * Once it is started you can see the staging site (the link will be given after the command itself)
 
+## To apply the changes made to the .yaml file to take effect
+* `helm upgrade formupdatesi130i485 helm-repo/fd-site -f FormUpdatesI130I485.yaml` here `formupdatesi130i485` is the deployment name and `FormUpdatesI130I485.yaml` is the file in which you made changes and want to take effect.
+
 ## To execute a pod/ To enter inside a pod
 * `kubectl exec -it uscisupdates-i485principalpremium-deployment-5ffcb96d-qw9mm -- bash` here `uscisupdates-i485principalpremium-deployment-5ffcb96d-qw9mm` is the deployment name.
 
