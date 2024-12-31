@@ -20,3 +20,4 @@
 * `git fetch` - To fetch changes from the remote repository without merging them.
 * `git stash` - To temporarily save changes that you don't want to commit yet.
 * `git stash pop` - To apply the most recent stashed changes.
+* `git checkout .` - If you've made changes to files and want to discard them, reverting all files to their state in the last commit, this is the command to use.
