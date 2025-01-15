@@ -6,3 +6,5 @@
 * A menu will appear. Select Getter and Setter from the list.
 * You'll be presented with a list of fields for which you can generate getters and setters. Select the ones you want, or select all.
 * Press Enter to generate them.
+## To create a desktop shortcut in ubuntu
+* go to `Tools/Create Desktop Entry`
